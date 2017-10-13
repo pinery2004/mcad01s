@@ -1,0 +1,220 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// ì˙ñ{åÍ resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)\r\n"
+    "LANGUAGE 17, 1\r\n"
+    "#pragma code_page(932)\r\n"
+    "#include ""res\\MCmd5.rc2""  // Microsoft Visual C++ à»äOÇ≈ï“èWÇ≥ÇÍÇΩÉäÉ\Å[ÉX\r\n"
+    "#include ""afxres.rc""     // ïWèÄÉRÉìÉ|Å[ÉlÉìÉg\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041103a4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <âÔé–ñº>"
+            VALUE "FileDescription", "TODO: <ÉtÉ@ÉCÉãÇÃê‡ñæ>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "MCmd5.dll"
+            VALUE "LegalCopyright", "TODO: (C) <âÔé–ñº>.  All rights reserved."
+            VALUE "OriginalFilename", "MCmd5.dll"
+            VALUE "ProductName", "TODO: <êªïiñº>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 932
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOGTENKAI DIALOGEX 0, 0, 442, 156
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "ÉLÉÉÉìÉZÉã",IDCANCEL,394,136,41,14,NOT WS_TABSTOP
+    PUSHBUTTON      "èZåÀä÷åWït",IDC_KANKEIJK,15,7,49,15
+    PUSHBUTTON      "èZåÀëIë",IDC_SELECTJK,15,135,44,15
+    PUSHBUTTON      "ã§ópïî",IDC_BUTTONKY1,198,135,33,15
+    LTEXT           "ìWäJå≥\nèZåÀNo",IDC_STATIC,19,47,28,24
+    LTEXT           "âúçsà⁄ìÆ",IDC_STATIC,16,88,32,12
+    LTEXT           "âúçs",IDC_STATIC,24,102,20,9
+    LTEXT           "ã–",IDC_STATIC,28,115,14,12
+    LTEXT           "èZåÀêî",IDC_STATICMXJUKO,164,13,27,10
+    COMBOBOX        IDC_COMBONUM,194,11,29,114,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP,WS_EX_CLIENTEDGE | WS_EX_RIGHT
+    GROUPBOX        "ÇP",IDC_STATICJUKO1,51,26,47,104,BS_CENTER
+    GROUPBOX        "ÇQ",IDC_STATICJUKO2,97,26,47,104,BS_CENTER
+    GROUPBOX        "ÇR",IDC_STATICJUKO3,143,26,47,104,BS_CENTER
+    GROUPBOX        "ÇS",IDC_STATICJUKO4,189,26,47,104,BS_CENTER
+    GROUPBOX        "ÇT",IDC_STATICJUKO5,235,26,47,104,BS_CENTER
+    GROUPBOX        "ÇU",IDC_STATICJUKO6,281,26,47,104,BS_CENTER
+    GROUPBOX        "ÇV",IDC_STATICJUKO7,327,26,47,104,BS_CENTER
+    GROUPBOX        "ÇW",IDC_STATICJUKO8,373,26,47,104,BS_CENTER
+    EDITTEXT        IDC_EDT_JK1,68,47,17,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_JK2,114,47,17,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_JK3,160,47,17,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_JK4,206,47,17,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_JK5,252,47,17,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_JK6,298,47,17,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_JK7,344,47,17,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_JK8,390,47,17,12,ES_CENTER | ES_AUTOHSCROLL
+    PUSHBUTTON      "ÇP",IDC_BUTTONF1,62,61,29,23
+    PUSHBUTTON      "ÇQ",IDC_BUTTONF2,108,61,29,23
+    PUSHBUTTON      "ÇR",IDC_BUTTONF3,154,61,29,23
+    PUSHBUTTON      "ÇS",IDC_BUTTONF4,200,61,29,23
+    PUSHBUTTON      "ÇT",IDC_BUTTONF5,246,61,29,23
+    PUSHBUTTON      "ÇU",IDC_BUTTONF6,292,61,29,23
+    PUSHBUTTON      "ÇV",IDC_BUTTONF7,338,61,29,23
+    PUSHBUTTON      "ÇW",IDC_BUTTONF8,384,61,29,23
+    EDITTEXT        IDC_EDT_MD1,56,86,37,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_MD2,102,86,37,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_MD3,148,86,37,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_MD4,194,86,37,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_MD5,240,86,37,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_MD6,286,86,37,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_MD7,332,86,37,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_MD8,378,86,37,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_D1,56,100,37,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_D2,102,100,37,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_D3,148,100,37,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_D4,194,100,37,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_D5,240,100,37,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_D6,286,100,37,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_D7,332,100,37,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_D8,378,100,37,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_W1,56,114,37,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_W2,102,114,37,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_W3,148,114,37,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_W4,194,114,37,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_W5,240,114,37,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_W6,286,114,37,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_W7,332,114,37,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_W8,378,114,37,12,ES_RIGHT | ES_AUTOHSCROLL
+    CONTROL         "îΩì]",IDC_CHECKH1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,60,35,28,10
+    CONTROL         "îΩì]",IDC_CHECKH2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,106,35,28,10
+    CONTROL         "îΩì]",IDC_CHECKH3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,152,35,28,10
+    CONTROL         "îΩì]",IDC_CHECKH4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,198,35,28,10
+    CONTROL         "îΩì]",IDC_CHECKH5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,244,35,28,10
+    CONTROL         "îΩì]",IDC_CHECKH6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,290,35,28,10
+    CONTROL         "îΩì]",IDC_CHECKH7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,336,35,28,10
+    CONTROL         "îΩì]",IDC_CHECKH8,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,382,35,28,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOGTENKAI, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 435
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 149
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // ì˙ñ{åÍ resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE 17, 1
+#pragma code_page(932)
+#include "res\MCmd5.rc2"  // Microsoft Visual C++ à»äOÇ≈ï“èWÇ≥ÇÍÇΩÉäÉ\Å[ÉX
+#include "afxres.rc"     // ïWèÄÉRÉìÉ|Å[ÉlÉìÉg
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

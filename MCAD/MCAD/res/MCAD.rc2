@@ -1,0 +1,16 @@
+//
+// MCAD.RC2 - Microsoft Visual C++ で直接編集しないリソース 
+//
+
+#include "MCadrc2.h"
+
+/////////////////////////////////////////////////////////////////////////////
+// 手動で編集されたりソースをここに追加します...
+
+/////////////////////////////////////////////////////////////////////////////
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_HATCHEDITERROR      "\nEditing hatch entities is not yet supported."
+    IDC_ERRORPROMPT_INTELLICAD_270          "\nCommand String Error"
+END

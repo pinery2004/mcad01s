@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Md", "Md.vcproj", "{CCD4CAA7-7DCD-4270-9CB2-AAC7A88061B6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{25A734A6-D39C-4027-8F08-C84477C5B255} = {25A734A6-D39C-4027-8F08-C84477C5B255}
+		{185998A9-40A4-4D62-88D0-3FA43D6714C7} = {185998A9-40A4-4D62-88D0-3FA43D6714C7}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MBasic", "..\MBasic\MBasic.vcproj", "{25A734A6-D39C-4027-8F08-C84477C5B255}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MGeo", "..\MGeo\MGeo.vcproj", "{185998A9-40A4-4D62-88D0-3FA43D6714C7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CCD4CAA7-7DCD-4270-9CB2-AAC7A88061B6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CCD4CAA7-7DCD-4270-9CB2-AAC7A88061B6}.Debug|Win32.Build.0 = Debug|Win32
+		{CCD4CAA7-7DCD-4270-9CB2-AAC7A88061B6}.Release|Win32.ActiveCfg = Release|Win32
+		{CCD4CAA7-7DCD-4270-9CB2-AAC7A88061B6}.Release|Win32.Build.0 = Release|Win32
+		{25A734A6-D39C-4027-8F08-C84477C5B255}.Debug|Win32.ActiveCfg = Debug|Win32
+		{25A734A6-D39C-4027-8F08-C84477C5B255}.Debug|Win32.Build.0 = Debug|Win32
+		{25A734A6-D39C-4027-8F08-C84477C5B255}.Release|Win32.ActiveCfg = Release|Win32
+		{25A734A6-D39C-4027-8F08-C84477C5B255}.Release|Win32.Build.0 = Release|Win32
+		{185998A9-40A4-4D62-88D0-3FA43D6714C7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{185998A9-40A4-4D62-88D0-3FA43D6714C7}.Debug|Win32.Build.0 = Debug|Win32
+		{185998A9-40A4-4D62-88D0-3FA43D6714C7}.Release|Win32.ActiveCfg = Release|Win32
+		{185998A9-40A4-4D62-88D0-3FA43D6714C7}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

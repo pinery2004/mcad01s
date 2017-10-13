@@ -1,0 +1,8 @@
+; MCmd4.def : DLL のモジュール パラメータを宣言します。
+
+LIBRARY      "MCmd4"
+
+EXPORTS
+    ; 明示的なエクスポートはここへ記述できます
+    MCmdGridNum
+    MCmdGridNumInp

@@ -1,0 +1,8 @@
+; MCmd3.def : DLL のモジュール パラメータを宣言します。
+
+LIBRARY      "MCmd3"
+
+EXPORTS
+    ; 明示的なエクスポートはここへ記述できます
+    MCmdOpt
+    MCmdOptInp

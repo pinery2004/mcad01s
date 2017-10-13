@@ -1,0 +1,41 @@
+; MSub.def : DLL のモジュール パラメータを宣言します。
+
+LIBRARY      "MSub"
+
+EXPORTS
+    ; 明示的なエクスポートはここへ記述できます
+
+	MsGetMREAL
+	MsGetMINT
+	MsCnvSMREAL
+	MsCnvSMINT
+
+	MtAskForPoint
+	MtGetInp
+;	MtBuildPrcEvent
+;	MtIsMCadExiting
+;	MtGetCommandQueue
+
+;	MtGetMtInpEventQueue
+	MtSendMessage
+
+	MtStopThread
+;	MtChkStopThread
+	MtSetCmdList
+	MtGetNFlag
+
+;	GetGlobalName
+
+;	MsLoadFileDlg
+;	MsSaveFileDlg
+	MsForFolderDlg
+
+;	MsDrawDisplayList
+	MsRenderScene1
+	
+;	MsOnSize
+;	MsGlInitialize
+
+	MsGetCurrentTime	
+	
+	MsCnvSCTime

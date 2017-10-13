@@ -1,0 +1,22 @@
+; MCmd1.def : DLL のモジュール パラメータを宣言します。
+
+LIBRARY      "MCmd1"
+
+EXPORTS
+	MCmdTest001
+	MCmdDemado
+	MCmdRoofSupplement
+	MCmdOpening
+	MCmdStairs
+	MCmdBalcony
+	MCmdWasitu
+	MCmdKitchen
+	MCmdKitchen
+	MCmdSenmen
+	MCmdToile
+	MCmdSettubi
+	MCmdDenki
+	MCmdPipe
+	MCmdSunpouSen
+	MCmdHikidasiSen
+	MCmdZumen

@@ -1,0 +1,6 @@
+; MCmd7.def : DLL のモジュール パラメータを宣言します。
+
+LIBRARY      "MCmd7"
+
+EXPORTS
+    ; 明示的なエクスポートはここへ記述できます

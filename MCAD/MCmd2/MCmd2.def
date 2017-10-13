@@ -1,0 +1,8 @@
+; MCmd2.def : DLL のモジュール パラメータを宣言します。
+
+LIBRARY      "MCmd2"
+
+EXPORTS
+    ; 明示的なエクスポートはここへ記述できます
+    MCmdHist
+    MCmdHistInp

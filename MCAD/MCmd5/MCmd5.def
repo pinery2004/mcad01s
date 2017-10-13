@@ -1,0 +1,8 @@
+; MCmd5.def : DLL のモジュール パラメータを宣言します。
+
+LIBRARY      "MCmd5"
+
+EXPORTS
+    ; 明示的なエクスポートはここへ記述できます
+    MCmdTenkai
+    MCmdTenkaiInp

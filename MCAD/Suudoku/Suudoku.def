@@ -1,0 +1,7 @@
+; Suudoku.def : DLL のモジュール パラメータを宣言します。
+
+LIBRARY      "Suudoku"
+
+EXPORTS
+    ; 明示的なエクスポートはここへ記述できます
+    MCmdSuudokuiInp

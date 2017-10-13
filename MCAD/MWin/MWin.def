@@ -1,0 +1,6 @@
+; MWin.def : DLL のモジュール パラメータを宣言します。
+
+LIBRARY      "MWin"
+
+EXPORTS
+    ; 明示的なエクスポートはここへ記述できます

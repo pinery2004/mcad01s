@@ -1,0 +1,749 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)\r\n"
+    "LANGUAGE 17, 1\r\n"
+    "#pragma code_page(932)\r\n"
+    "#include ""res\\MCAD.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // 標準コンポーネント\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\MCAD.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINTOOL            BITMAP                  "res\\Toolbar.bmp"
+IDR_SUB1TOOL            BITMAP                  "res\\toolbar1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINTOOL TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      IDC_P0010
+    BUTTON      IDC_P0020
+    BUTTON      IDC_P0030
+    BUTTON      IDC_P0040
+    SEPARATOR
+    BUTTON      IDC_P0050
+    BUTTON      IDC_P0060
+    BUTTON      IDC_P0070
+    BUTTON      IDC_P0080
+    BUTTON      IDC_P0090
+    BUTTON      IDC_P0100
+    SEPARATOR
+    BUTTON      IDC_P0110
+    BUTTON      IDC_P0120
+    BUTTON      IDC_P0130
+    BUTTON      IDC_P0140
+    BUTTON      IDC_P0150
+    BUTTON      IDC_P0160
+    SEPARATOR
+    BUTTON      IDC_P0170
+    BUTTON      IDC_P0180
+    BUTTON      IDC_P0190
+    BUTTON      IDC_P0200
+    BUTTON      IDC_P0210
+    BUTTON      IDC_P0220
+    BUTTON      IDC_P0230
+    BUTTON      IDC_P0240
+    BUTTON      IDC_P0250
+    SEPARATOR
+    BUTTON      IDC_P0260
+    BUTTON      IDC_P0270
+    BUTTON      IDC_P0280
+    BUTTON      IDC_P0290
+    BUTTON      IDC_P0300
+    BUTTON      IDC_P0310
+    BUTTON      IDC_P0320
+    BUTTON      IDC_P0330
+    BUTTON      IDC_P0340
+    SEPARATOR
+    BUTTON      IDC_P0350
+    BUTTON      IDC_P0360
+END
+
+IDR_SUB1TOOL TOOLBAR  16, 15
+BEGIN
+    BUTTON      IDP_P0010
+    BUTTON      IDP_P0020
+    BUTTON      IDP_P0030
+    BUTTON      IDP_P0040
+    BUTTON      IDP_P0050
+    BUTTON      IDP_P0060
+    BUTTON      IDP_P0070
+    BUTTON      IDP_P0080
+    BUTTON      IDP_P0090
+    BUTTON      IDP_P0100
+    BUTTON      IDP_P0110
+    BUTTON      IDP_P0120
+    SEPARATOR
+    BUTTON      IDP_P0130
+    SEPARATOR
+    BUTTON      IDP_P0140
+    BUTTON      IDP_P0150
+    BUTTON      IDP_P0160
+    BUTTON      IDP_P0170
+    SEPARATOR
+    BUTTON      IDP_P0180
+    BUTTON      IDP_P0190
+    SEPARATOR
+    BUTTON      IDP_P0200
+    BUTTON      IDP_P0210
+    SEPARATOR
+    BUTTON      IDP_P0220
+    BUTTON      IDP_P0230
+    BUTTON      IDP_P0240
+    SEPARATOR
+    BUTTON      IDP_P0250
+    BUTTON      IDP_P0260
+    BUTTON      IDP_P0270
+    SEPARATOR
+    BUTTON      IDP_P0280
+    BUTTON      IDP_P0290
+    BUTTON      IDP_P0300
+    SEPARATOR
+    BUTTON      IDP_P0310
+    BUTTON      IDP_P0320
+    BUTTON      IDP_P0330
+    SEPARATOR
+    BUTTON      IDP_P0340
+    BUTTON      IDP_P0350
+    BUTTON      IDP_P0360
+    SEPARATOR
+    BUTTON      IDP_P0370
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENUEX 
+BEGIN
+    POPUP "ファイル(&F)",                       65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "新規作成(&N)\tCtrl+N",            57600,MFT_STRING,MFS_ENABLED
+        MENUITEM "開く(&O)\tCtrl+O",              57601,MFT_STRING | MFT_RIGHTJUSTIFY,MFS_ENABLED
+        MENUITEM "閉じる(&C)",                     57602,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "上書き保存(&S)\tCtrl+S",           57603,MFT_STRING,MFS_ENABLED
+        MENUITEM "名前を付けて保存(&A)",                57604,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "アプリケーションの終了(&X)",             57665,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "表示(&V)",                         65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "ツール バー(&T)",                  59392,MFT_STRING,MFS_ENABLED
+        MENUITEM "ステータス バー(&S)",                59393,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "ヘルプ(&H)",                        65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "バージョン情報 MCAD(&A)...",         57664,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "一時的",                            65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "一時的",                         32828,MFT_STRING,MFS_ENABLED
+    END
+END
+
+IDR_MCADTYPE MENU 
+BEGIN
+    POPUP "ファイル(&F)"
+    BEGIN
+        MENUITEM "新規作成(&N)\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "開く(&O)\tCtrl+O",              ID_FILE_OPEN
+        MENUITEM "閉じる(&C)",                     ID_FILE_CLOSE
+        MENUITEM "上書き保存(&S)\tCtrl+S",           ID_FILE_SAVE
+        MENUITEM "名前を付けて保存(&A)",                ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "印刷(&P)\tCtrl+P",              ID_FILE_PRINT
+        MENUITEM "印刷プレビュー(&V)...",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "プリンタの設定(&R)...",              ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "アプリケーションの終了(&X)",             ID_APP_EXIT
+    END
+    POPUP "編集(&E)"
+    BEGIN
+        MENUITEM "元に戻す(&U)\tCtrl+Z",            ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "切り取り(&T)\tCtrl+X",            ID_EDIT_CUT
+        MENUITEM "コピー(&C)\tCtrl+C",             ID_EDIT_COPY
+        MENUITEM "貼り付け(&P)\tCtrl+V",            ID_EDIT_PASTE
+    END
+    POPUP "表示(&V)"
+    BEGIN
+        MENUITEM "ツール バー(&T)",                  ID_VIEW_TOOLBAR
+        MENUITEM "ステータス バー(&S)",                ID_VIEW_STATUS_BAR
+        MENUITEM "View1 On",                    ID_VIEW1_ON
+        MENUITEM "View2 On",                    ID_VIEW2_ON
+        MENUITEM "View3 On",                    ID_VIEW3_ON
+        MENUITEM "View4 On",                    ID_VIEW4_ON
+        MENUITEM "View5 On",                    ID_VIEW5_ON
+        MENUITEM "View1 Off",                   ID_VIEW1_OFF
+        MENUITEM "View2 Off",                   ID_VIEW2_OFF
+        MENUITEM "View3 Off",                   ID_VIEW3_OFF
+        MENUITEM "View4 Off",                   ID_VIEW4_OFF
+        MENUITEM "View5 Off",                   ID_VIEW5_OFF
+    END
+    POPUP "ウィンドウ(&W)"
+    BEGIN
+        MENUITEM "重ねて表示(&C)",                   ID_WINDOW_CASCADE
+        MENUITEM "並べて表示(&T)",                   ID_WINDOW_TILE_HORZ
+        MENUITEM "アイコンの整列(&A)",                 ID_WINDOW_ARRANGE
+    END
+    POPUP "ヘルプ(&H)"
+    BEGIN
+        MENUITEM "バージョン情報 MCAD(&A)...",         ID_APP_ABOUT
+    END
+    POPUP "選択"
+    BEGIN
+        MENUITEM "意匠",                          IDM_ISYOU
+        MENUITEM "構造",                          IDM_KOUZOU
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "バージョン情報 MCAD"
+FONT 9, "MS UI Gothic", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "MCAD Version 0.1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2007",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_DIALOGBARINPUT DIALOGEX 0, 0, 225, 16
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "MS UI Gothic", 0, 0, 0x0
+BEGIN
+    CONTROL         "１階",IDC_RADIO1F,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,6,2,24,12
+    CONTROL         "２階",IDC_RADIO2F,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,32,1,23,13
+    CONTROL         "３階",IDC_RADIO3F,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,56,1,23,13
+    COMBOBOX        IDC_CMB_Inp1,83,2,34,178,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CMB_Inp2,117,2,29,182,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CMB_Inp3,147,2,52,182,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOGBARDISP DIALOGEX 0, 0, 277, 16
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "MS UI Gothic", 0, 0, 0x0
+BEGIN
+    CONTROL         "部材",IDC_CHECKBUZAI,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,182,3,28,10
+    CONTROL         "金物",IDC_CHECKKANAGU,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,212,3,28,10
+    CONTROL         "合板",IDC_CHECKGOHAN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,242,3,28,10
+    PUSHBUTTON      "削除",IDC_CHUKIDELETE,102,2,23,12
+    PUSHBUTTON      "移動",IDC_CHUKIMOVE,128,2,22,12
+    PUSHBUTTON      "変更",IDC_CHUKICHANGE,153,2,22,12
+    CONTROL         "選択１",IDC_RADIOSEL1,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,6,3,29,10
+    CONTROL         "選択２",IDC_RADIOSEL2,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,37,3,29,10
+    CONTROL         "選択３",IDC_RADIOSEL3,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,68,3,29,10
+END
+
+IDD_DIALOGPARTSEDIT DIALOGEX 0, 0, 504, 302
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "部材一覧"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,447,7,50,14
+    PUSHBUTTON      "キャンセル",IDCANCEL,447,24,50,14
+    CONTROL         "部材表",IDC_PARTSLIST1,"MFCGridCtrl",WS_TABSTOP,7,55,490,177
+END
+
+IDD_DIALOGBARPARTS DIALOGEX 0, 0, 498, 16
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "MS UI Gothic", 0, 0, 0x0
+BEGIN
+    CONTROL         "屋根",IDC_RADIOYANE,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,7,4,25,8
+    CONTROL         "小屋",IDC_RADIOKOYA,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,33,4,27,8
+    CONTROL         "天井",IDC_RADIOTENJO,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,61,4,24,8
+    CONTROL         "耐力壁",IDC_RADIOTAIRYOKU,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,86,4,32,8
+    CONTROL         "壁",IDC_RADIOKABE,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,119,4,17,8
+    CONTROL         "床",IDC_RADIOYUKA,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,137,4,18,8
+    CONTROL         "土台",IDC_RADIODODAI,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,156,4,27,8
+    CONTROL         "基礎",IDC_RADIOKISO,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,184,4,25,8
+    LTEXT           "｜",IDC_STATIC,210,4,8,8
+    CONTROL         "部材",IDC_RADIOBUZAI,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,219,4,25,8
+    CONTROL         "金物",IDC_RADIOKANAGU,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,245,4,26,8
+    CONTROL         "パネル",IDC_RADIOPANEL,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,272,4,28,8
+    CONTROL         "その他",IDC_RADIOOTHER,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,301,4,30,8
+    COMBOBOX        IDC_CMB_BZI1,344,1,87,301,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CMB_BZI2,434,1,61,440,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOGBARPANEL DIALOGEX 0, 0, 120, 16
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "MS UI Gothic", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "前",IDC_PANELBEFORE,5,2,22,12
+    PUSHBUTTON      "次",IDC_PANELNEXT,29,2,22,12
+    PUSHBUTTON      "全",IDC_PANELALL,53,2,21,12
+    COMBOBOX        IDC_COMBOPANELNO,76,1,40,330,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOGBARATTR DIALOGEX 0, 0, 455, 16
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "MS UI Gothic", 0, 0, 0x0
+BEGIN
+    CTEXT           "長さ補正1",IDC_STATICATTR1,5,4,30,8
+    COMBOBOX        IDC_CMB_ATTR1,38,1,37,251,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP,WS_EX_RIGHT
+    CTEXT           "長さ補正2",IDC_STATICATTR2,78,4,30,8
+    COMBOBOX        IDC_CMB_ATTR2,111,1,37,251,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP,WS_EX_RIGHT
+    CTEXT           "芯ずれ",IDC_STATICATTR3,151,4,30,8
+    COMBOBOX        IDC_CMB_ATTR3,184,1,37,251,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP,WS_EX_RIGHT
+    CTEXT           "配置ずれ",IDC_STATICATTR4,224,4,30,8
+    COMBOBOX        IDC_CMB_ATTR4,257,1,37,251,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP,WS_EX_RIGHT
+    CTEXT           "取付高さ",IDC_STATICATTR5,297,4,30,8
+    COMBOBOX        IDC_CMB_ATTR5,330,1,37,251,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP,WS_EX_RIGHT
+    CTEXT           "ＲＯＨ",IDC_STATICATTR6,370,4,30,8
+    COMBOBOX        IDC_CMB_ATTR6,403,1,37,251,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP,WS_EX_RIGHT
+    CONTROL         "属性１",IDC_CHECKATTR1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,227,3,55,10
+    CONTROL         "属性２",IDC_CHECKATTR2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,284,3,55,10
+    CONTROL         "属性３",IDC_CHECKATTR3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,341,3,55,10
+    CONTROL         "属性４",IDC_CHECKATTR4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,398,3,55,10
+END
+
+IDD_DIALOGBARSEKKEI DIALOGEX 0, 0, 508, 16
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "MS UI Gothic", 0, 0, 0x0
+BEGIN
+    CONTROL         "住戸",IDC_RADIOJYUUKO,"Button",BS_AUTORADIOBUTTON,9,4,26,8
+    CONTROL         "住棟",IDC_RADIOJYUUTO,"Button",BS_AUTORADIOBUTTON,39,4,25,8
+    CONTROL         "物件",IDC_RADIOBUKKEN,"Button",BS_AUTORADIOBUTTON,68,4,25,8
+    CONTROL         "屋根",IDC_RADIOSYANE,"Button",BS_AUTORADIOBUTTON,97,4,26,8
+    CONTROL         "敷地",IDC_RADIOSIKITI,"Button",BS_AUTORADIOBUTTON,127,4,26,8
+    CONTROL         "壁量",IDC_RADIOHEKIRYOU,"Button",BS_AUTORADIOBUTTON,157,4,26,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,1,0,1
+ PRODUCTVERSION 0,1,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041103a4"
+        BEGIN
+            VALUE "CompanyName", "KMクリエイト"
+            VALUE "FileDescription", "住宅CAD"
+            VALUE "FileVersion", "0.1.0.1"
+            VALUE "InternalName", "MCAD.exe"
+            VALUE "LegalCopyright", "KMクリエイト.  All rights reserved."
+            VALUE "OriginalFilename", "MCAD.exe"
+            VALUE "ProductName", "MCAD"
+            VALUE "ProductVersion", "0.1.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 932
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIALOGBARINPUT DLGINIT
+BEGIN
+    IDC_CMB_Inp1, 0x403, 7, 0
+0xb396, 0x778e, 0xe892, "\000" 
+    IDC_CMB_Inp1, 0x403, 5, 0
+0x5082, 0x5f93, "\000" 
+    IDC_CMB_Inp1, 0x403, 9, 0
+0xfb95, 0xfc8c, 0x5182, 0x5f93, "\000" 
+    IDC_CMB_Inp1, 0x403, 9, 0
+0xb792, 0xb382, 0x5182, 0x5f93, "\000" 
+    IDC_CMB_Inp1, 0x403, 5, 0
+0xe68b, 0xe689, "\000" 
+    IDC_CMB_Inp1, 0x403, 5, 0
+0xa98e, 0x5297, "\000" 
+    IDC_CMB_Inp2, 0x403, 9, 0
+0xdb8a, 0xdf82, 0xc882, 0xb582, "\000" 
+    IDC_CMB_Inp2, 0x403, 7, 0
+0x6d82, 0x5e81, 0x5082, "\000" 
+    IDC_CMB_Inp2, 0x403, 7, 0
+0x6d82, 0x5e81, 0x5182, "\000" 
+    IDC_CMB_Inp2, 0x403, 7, 0
+0x6d82, 0x5e81, 0x5282, "\000" 
+    IDC_CMB_Inp2, 0x403, 7, 0
+0x6d82, 0x5e81, 0x5382, "\000" 
+    IDC_CMB_Inp2, 0x403, 7, 0
+0x6d82, 0x5e81, 0x5582, "\000" 
+    IDC_CMB_Inp2, 0x403, 7, 0
+0x6d82, 0x5e81, 0x5782, "\000" 
+    IDC_CMB_Inp3, 0x403, 5, 0
+0x4394, 0xd388, "\000" 
+    IDC_CMB_Inp3, 0x403, 9, 0
+0xc795, 0x6390, 0x7495, 0xab82, "\000" 
+    IDC_CMB_Inp3, 0x403, 15, 0
+0xae89, 0xaa8d, 0x5c8d, 0xac90, 0xfc90, 0x7495, 0xab82, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CROSS1              CURSOR                  "res\\cross1.cur"
+IDC_CROSS3              CURSOR                  "res\\cross3.cur"
+IDC_CROSS2              CURSOR                  "res\\cross2.cur"
+IDC_ZOOM                CURSOR                  "res\\zoom.cur"
+IDC_GRAB                CURSOR                  "res\\grab.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOGBARPARTS, DIALOG
+    BEGIN
+        RIGHTMARGIN, 450
+    END
+
+    IDD_DIALOGBARATTR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        BOTTOMMARGIN, 15
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "MCAD"
+    IDR_MCADTYPE            "\nMCAD\nMCAD"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "MCAD"
+    AFX_IDS_IDLEMESSAGE     "レディ"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "上書き"
+    ID_INDICATOR_REC        "記録"
+    ID_INDICATOR_KANA       "ｶﾅ"
+    ID_INDICATOR_MUTH       "座標"
+    ID_INDICATOR_CMND       "操作"
+    ID_INDICATOR_EROR       "　　"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "新規にファイルを作成\n新規ファイル"
+    ID_FILE_OPEN            "既存の家モデルﾌｧｲﾙを開く\n開く"
+    ID_FILE_CLOSE           "作業中のファイルを閉じる\n閉じる"
+    ID_FILE_SAVE            "作業中の家モデルﾌｧｲﾙを上書きして保存\n保存"
+    ID_FILE_SAVE_AS         "作業中の家モデルに名前を付けて保存"
+    ID_FILE_PRINT_SETUP     "プリンタおよび印刷オプションの変更\n印刷設定"
+    ID_FILE_PRINT           "作業中のﾌｧｲﾙを印刷\n印刷"
+    ID_FILE_PRINT_PREVIEW   "印刷イメージを表示\n印刷プレビュー"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "\n"
+    ID_APP_EXIT             "アプリケーションを終了し、ファイルの保存を指示\\終了"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "次のウィンドウに切り替える\n次のペイン"
+    ID_PREV_PANE            "前のウィンドウに切り替える\n前のペイン"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_ARRANGE       "ウィンドウの下部にアイコンを整列\nアイコンの整列"
+    ID_WINDOW_CASCADE       "ウィンドウを重ねて表示\n重ねて表示"
+    ID_WINDOW_TILE_HORZ     "ウィンドウを並べて表示\n並べて表示"
+    ID_WINDOW_TILE_VERT     "ウィンドウを並べて表示\n並べて表示"
+    ID_WINDOW_SPLIT         "作業中のウィンドウを分割\n分割"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "選択範囲を消去\n消去"
+    ID_EDIT_CLEAR_ALL       "すべて消去\nすべて消去"
+    ID_EDIT_COPY            "選択範囲をｺﾋﾟｰしてｸﾘｯﾌﾟﾎﾞｰﾄﾞに保存\nｺﾋﾟｰ"
+    ID_EDIT_CUT             "選択範囲を切り取ってクリップボードに保存\n切り取り"
+    ID_EDIT_FIND            "指定した文字列の検索\n検索"
+    ID_EDIT_PASTE           "クリップボードの内容を貼り付け\n貼り付け"
+    ID_EDIT_REPEAT          "直前に行った動作を繰り返す\n繰り返し"
+    ID_EDIT_REPLACE         "指定した文字列を他の文字列で置換\n置換"
+    ID_EDIT_SELECT_ALL      "ファイル内のすべてを選択\nすべて選択"
+    ID_EDIT_UNDO            "直前に行った動作を元に戻す\n元に戻す"
+    ID_EDIT_REDO            "直前に行った動作を繰り返す\n繰り返す"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "ツール バーの 表示/非表示\nツール バーの表示切り替え"
+    ID_VIEW_STATUS_BAR      "ステータス バーの 表示/非表示\nステータス バーの表示切り替え"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "ウィンドウのサイズを変更"
+    AFX_IDS_SCMOVE          "ウィンドウの位置を変更"
+    AFX_IDS_SCMINIMIZE      "ウィンドウを最小化する"
+    AFX_IDS_SCMAXIMIZE      "ウィンドウを最大化する"
+    AFX_IDS_SCNEXTWINDOW    "次のウィンドウに切り替える"
+    AFX_IDS_SCPREVWINDOW    "前のウィンドウに切り替える"
+    AFX_IDS_SCCLOSE         "作業中のウィンドウを閉じ、変更したファイルの保存を指示"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "ウィンドウを通常のサイズに戻す"
+    AFX_IDS_SCTASKLIST      "タスク一覧をアクティブにする"
+    AFX_IDS_MDICHILD        "ウィンドウをアクティブにする"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_BUTTON32791          "作業中のﾌｧｲﾙを印刷\n印刷"
+    IDC_P0010               "Undo\nUndo"
+    IDC_P0020               "Redo\nRedo"
+    IDC_P0030               "1点取り消し\n1点取り消し"
+    IDC_P0040               "全点取り消し\n全点取り消し"
+    IDC_P0050               "初期\n初期"
+    IDC_P0060               "移動\n移動"
+    IDC_P0070               "拡大\n拡大"
+    IDC_P0080               "\n"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_P0090               "\n"
+    IDC_P0100               "\n"
+    IDC_P0110               "追加\n追加"
+    IDC_P0120               "削除\n削除"
+    IDC_P0130               "移動\n移動"
+    IDC_P0140               "変更\n変更"
+    IDC_P0150               "コピー\nコピー"
+    IDC_P0160               "確認\n確認"
+    IDC_P0170               "基本情報\n基本情報"
+    IDC_P0180               "グリッド\nグリッド"
+    IDC_P0190               "オプション\nオプション"
+    IDC_P0200               "履歴\n履歴"
+    IDC_P0210               "住棟展開\n住棟展開"
+    IDC_P0220               "部品表\n部品表"
+    IDC_P0230               "\n"
+    IDC_P0240               "\n"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_P0250               "\n"
+    IDC_P0260               "３次元表示\n３次元表示"
+    IDC_P0270               "\n"
+    IDC_P0280               "\n"
+    IDC_P0290               "\n"
+    IDC_P0300               "DXFFILE読込み\nDXFFILE読込み"
+    IDC_P0310               "\n"
+    IDC_P0320               "\n"
+    IDC_P0330               "\n"
+    IDC_P0340               "部材長さ調整\n部材長さ調整"
+    IDC_P0350               "\n"
+    IDC_P0360               "パネル番号変更\nパネル番号変更"
+    IDP_P0010               "外壁\n外壁"
+    IDP_P0020               "内壁\n内壁"
+    IDP_P0030               "部屋\n部屋"
+    IDP_P0040               "サッシ\nサッシ"
+END
+
+STRINGTABLE 
+BEGIN
+    IDP_P0050               "ドア\nドア"
+    IDP_P0060               "内部建具\n内部建具"
+    IDP_P0070               "出窓\n出窓"
+    IDP_P0080               "屋根\n屋根"
+    IDP_P0090               "屋根付帯\n屋根付帯"
+    IDP_P0100               "開口\n開口"
+    IDP_P0110               "階段\n階段"
+    IDP_P0120               "バルコニー\nバルコニー"
+    IDP_P0140               "構造屋根＿垂木\n垂木"
+    IDP_P0150               "構造天井＿根太\n天井根太"
+    IDP_P0160               "構造壁＿たて枠\nたて枠"
+    IDP_P0170               "構造床＿床根太\n床根太"
+    IDP_P0180               "土台\n土台"
+    IDP_P0190               "基礎\n基礎"
+    IDP_P0200               "和室\n和室"
+END
+
+STRINGTABLE 
+BEGIN
+    IDP_P0210               "\n"
+    IDP_P0220               "キッチン\nキッチン"
+    IDP_P0230               "洗面・バス\n洗面・バス"
+    IDP_P0240               "トイレ\nトイレ"
+    IDP_P0250               "設備\n設備"
+    IDP_P0260               "電気\n電気"
+    IDP_P0270               "配管\n配管"
+    IDP_P0310               "寸法線\n寸法線"
+    IDP_P0320               "引出注記\n引出注記"
+    IDP_P0340               "図面\n図面"
+END
+
+#include "res\MCAD.rc2"  // non-Microsoft Visual C++ edited resources
+
+#endif    // 日本語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE 17, 1
+#pragma code_page(932)
+#include "afxres.rc"         // 標準コンポーネント
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
+

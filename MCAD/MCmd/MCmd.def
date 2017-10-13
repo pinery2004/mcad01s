@@ -1,0 +1,61 @@
+; MCmd.def : DLL のモジュール パラメータを宣言します。
+
+LIBRARY      "MCmd"
+
+EXPORTS
+    ; 明示的なエクスポートはここへ記述できます
+	MCmdLoadDxfFile
+	MCmdUndo
+	MCmdRedo
+	MCmdClearRedo
+	MCmdLine
+	MCmdStructCeiling
+	MCmdStructWall
+	MCmdStructFloor
+	MCmdStructDodai
+	MCmdKiso
+	
+;class Input
+;	GetLenEPt
+;	GetRect2Pt
+;	GetArea
+;	GetLen2Pt
+;	Get1Pt
+;	GetAreaI
+
+;class Haiti
+;	GetCurRfm
+	
+	MCmdWallOuter
+	MCmdWallInner
+	MCmdGaiTateSash
+	MCmdGaiTateDoor
+	MCmdNaiTate
+	MCmdLineW
+	
+	SetInpAt
+	
+	MCmdDebug
+	MCmdMdLineLength
+	MhModBzPH
+	MhChngCrossBuzai
+	MCmdRoof
+	MCmdRoofAdd
+	
+	
+	MCmdMdPanelNo
+	MCmdLineDelete
+	MCmdRoofDelete
+	MCmdMdCreate
+	MCmdMdDelete
+	MCmdMdModify
+	MCmdMdMove
+	MCmdMdCopy
+	MCmdMdProperty
+;	MCmdPtsEdit
+;	MCmdGridNum
+;	MCmdTenkai
+
+	MCmdStructRoof
+	MCmdPts
+	MCmdWait
