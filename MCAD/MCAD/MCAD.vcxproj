@@ -272,7 +272,7 @@
       <EntryPointSymbol>wWinMainCRTStartup</EntryPointSymbol>
     </Link>
     <PostBuildEvent>
-      <Command>copy $(OutDir)$(ProjectName).dll D:\MCAD_64\</Command>
+      <Command>copy $(OutDir)$(ProjectName).exe D:\MCAD_64\</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>

@@ -13,7 +13,7 @@
 	#pragma message( "<<< MHTATEGUINP・dll_none >>>")
 	#define DLL_EXPORT							__declspec( dllexport)
 #else
-	#ifdef _DEBUG								// Release Mode で inline関数がundefになる不具合対応
+//	#ifdef _DEBUG								// Release Mode で inline関数がundefになる不具合対応
 		#ifdef DLL_NO_IMPORT_MD_DO
 			#pragma message( "=== MHTATEGUINP・dll_none ===")
 			#define DLL_EXPORT
@@ -21,10 +21,10 @@
 			#pragma message( "=== MHTATEGUINP・dll_IMport ===")
 			#define DLL_EXPORT						__declspec( dllimport)
 		#endif
-	#else
-		#pragma message( "=== MHTATEGUINP・dll_none ===")
-		#define DLL_EXPORT
-	#endif
+//	#else
+//		#pragma message( "=== MHTATEGUINP・dll_none ===")
+//		#define DLL_EXPORT
+//	#endif
 #endif
 
 namespace MC
@@ -71,7 +71,7 @@ public:
 	#pragma message( "<<< MHPLCINP・dll_none >>>")
 	#define DLL_EXPORT							__declspec( dllexport)
 #else
-	#ifdef _DEBUG								// Release Mode で inline関数がundefになる不具合対応
+//	#ifdef _DEBUG								// Release Mode で inline関数がundefになる不具合対応
 		#ifdef DLL_NO_IMPORT_MD_DO
 			#pragma message( "=== MHPLCINP・dll_none ===")
 			#define DLL_EXPORT
@@ -79,10 +79,10 @@ public:
 			#pragma message( "=== MHPLCINP・dll_IMport ===")
 			#define DLL_EXPORT						__declspec( dllimport)
 		#endif
-	#else
-		#pragma message( "=== MHPLCINP・dll_none ===")
-		#define DLL_EXPORT
-	#endif
+//	#else
+//		#pragma message( "=== MHPLCINP・dll_none ===")
+//		#define DLL_EXPORT
+//	#endif
 #endif
 
 

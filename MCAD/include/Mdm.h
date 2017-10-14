@@ -19,7 +19,7 @@ namespace MC
 	#pragma message( "<<< Mdm・dll_EXport >>>")
 	#define DLL_EXPORT							__declspec( dllexport)
 #else
-	#ifdef _DEBUG								// Release Mode で inline関数がundefになる不具合対応
+//	#ifdef _DEBUG								// Release Mode で inline関数がundefになる不具合対応
 		#ifdef DLL_NO_IMPORT_MD_DO
 			#pragma message( "=== Mdm・dll_none ===")
 			#define DLL_EXPORT
@@ -27,10 +27,10 @@ namespace MC
 			#pragma message( "=== Mdm・dll_IMport ===")
 			#define DLL_EXPORT						__declspec( dllimport)
 		#endif
-	#else
-		#pragma message( "=== Mdm・dll_none ===")
-		#define DLL_EXPORT
-	#endif
+//	#else
+//		#pragma message( "=== Mdm・dll_none ===")
+//		#define DLL_EXPORT
+//	#endif
 #endif
 
 class DLL_EXPORT Mdm
@@ -119,7 +119,7 @@ public:
 	//===========================================================================
 	//【機能】カレントモデルを取得する
 	//【返値】モデル
-	static MdModel* GetCurModel()
+	static inline MdModel* GetCurModel()
 	{
 		return ms_pCurMdl;
 	}

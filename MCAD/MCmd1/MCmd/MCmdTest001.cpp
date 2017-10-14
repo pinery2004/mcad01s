@@ -70,7 +70,8 @@ void Test002_DBModule()
 	MDID	idGrp[5];							// グループId
 	MINT	isz = 20;							// 初期グループIdバッファサイズ
 
-	MdModel* pIeModel = Mdm::GetCurModel(); 
+//	MdModel* pIeModel = Mdm::GetCurModel();
+	MdModel* pIeModel = Mdm::ms_pCurMdl;
 
 	iSt = DGrp::CreateGrp( Mstr( "グループ１"), 3000., 250., &idGrp[0], isz);
 	pIeModel->Print( Mstr( "●家モデル　グループ１"));
@@ -105,7 +106,8 @@ void Test003_DBModule()
 	MDID	idScm[5];							// レイヤーId
 	MINT	isz = 20;							// 初期レイヤーIdバッファサイズ
 
-	MdModel* pIeModel = Mdm::GetCurModel(); 
+//	MdModel* pIeModel = Mdm::GetCurModel(); 
+	MdModel* pIeModel = Mdm::ms_pCurMdl;
 
 	iSt = DGrp::CreateScm( Mstr( "スキーマ１"), &idScm[0], isz);
 	pIeModel->Print( Mstr( "●家モデル　スキーマ１"));
@@ -141,7 +143,8 @@ void Test004_DBModule()
 
 	MINT	isz = 20;							// 初期グループIdバッファサイズ
 
-	MdModel* pIeModel = Mdm::GetCurModel(); 
+//	MdModel* pIeModel = Mdm::GetCurModel(); 
+	MdModel* pIeModel = Mdm::ms_pCurMdl;
 
 	iSt = DGrp::CreateGrp( Mstr( "グループ１"), 3000., 250., &idGrp[0], isz);
 	pIeModel->Print( Mstr( "●家モデル　グループ１"));
@@ -191,7 +194,8 @@ void Test005_DBModule()
 	MDID	idEnt[10];							// エンティティId
 	MINT	isz = 20;							// 初期エンティティIdバッファサイズ
 
-	MdModel* pIeModel = Mdm::GetCurModel(); 
+//	MdModel* pIeModel = Mdm::GetCurModel(); 
+	MdModel* pIeModel = Mdm::ms_pCurMdl;
 
 	iSt = DGrp::CreateGrp( Mstr( "グループ１"), 3000., 250., &idGrp[0], isz);
 	pIeModel->Print( Mstr( "●家モデル　グループ１"));
@@ -247,7 +251,8 @@ void Test006_DBModule()
 	MDID	idEnt[20];							// エンティティId
 	MINT	isz = 40;							// 初期エンティティIdバッファサイズ
 
-	MdModel* pIeModel = Mdm::GetCurModel(); 
+//	MdModel* pIeModel = Mdm::GetCurModel(); 
+	MdModel* pIeModel = Mdm::ms_pCurMdl;
 
 	iSt = DGrp::CreateGrp( Mstr( "グループ１"), 3000., 250., &idGrp[0], isz);
 	pIeModel->Print( Mstr( "●家モデル　グループ１"));

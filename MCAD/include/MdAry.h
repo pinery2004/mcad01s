@@ -9,8 +9,6 @@
 //
 //  K.Matsu           08/01/04    Created.
 //==========================================================================================
-#pragma message( "<< MdAry.h >>")
-
 #include "MgDefine.h"
 #include "MgPoint.h"
 #include "MgPolygon.h"
