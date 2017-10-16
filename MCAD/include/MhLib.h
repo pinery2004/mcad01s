@@ -1,5 +1,9 @@
 #pragma once
 
+#define	TRACE_IO		0			// Read / Write トレース　フラグ　( 0 | 1)		標準値(0)
+#define DEBUG1			0			// 
+#define Disp3DBox		0			// 1: 3Dの家モデルの代わりに3Dの箱を表示する, 0: 3Dの家モデルを表示する
+
 namespace MC
 {
 

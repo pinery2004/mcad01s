@@ -75,13 +75,13 @@ M3View::M3View() : m_hRC(0)
 }
 void M3View::OnPaint()
 {
-#if(1)		// 11/10/
-	MsRenderScene1( m_iFWire, m_rScl, m_rRotX, m_rRotY, m_rRotZ,
-								    m_rMovX, m_rMovY, m_rMovZ);
+#if(Disp3DBox)		// 11/10/
+	GlLib::DrawGLobject();
+	GlLib::DrawGLobject1(m_iFWire, m_rScl, m_rRotX, m_rRotY, m_rRotZ,
+		m_rMovX, m_rMovY, m_rMovZ);
 #else
-//	GlLib::DrawGLobject();
-	GlLib::DrawGLobject1( m_iFWire, m_rScl, m_rRotX, m_rRotY, m_rRotZ,
-								    m_rMovX, m_rMovY, m_rMovZ);
+	MsRenderScene1(m_iFWire, m_rScl, m_rRotX, m_rRotY, m_rRotZ,
+		m_rMovX, m_rMovY, m_rMovZ);
 #endif
 }
 
@@ -114,7 +114,7 @@ int M3View::OnCreate( HDC hdc)
 	// 3Dオブジェクトを生成(Displaylist作成)
 	MdlDispList::MhGetBCtr( &rB, &PtCtr);									// ３次元ディスプレイリスト作成用の表示倍率と中心座標を求める
 	
-	MdlDispList::DrawIeMdl( rB, PtCtr);
+	MdlDispList::DrawIeMdlK( rB, PtCtr);
 
 	return 0;
 }

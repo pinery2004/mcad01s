@@ -116,8 +116,8 @@ void CChildView2::OnPaint()
 #else
 
 	m_M3View.OnPaint();
-//	if( FALSE == SwapBuffers( m_pDC->GetSafeHdc())) MC::ShowError(7);	// Orig
-	SwapBuffers( m_pDC->m_hDC);    // Double buffer
+	if( FALSE == SwapBuffers( m_pDC->GetSafeHdc())) MC::ShowError(7);	// Orig
+//	SwapBuffers( m_pDC->m_hDC);    // Double buffer
 #endif
 }
 
@@ -148,14 +148,14 @@ int CChildView2::OnCreate( LPCREATESTRUCT lpCreateStruct)
 	}
 	m_M3View.OnCreate( m_pDC->m_hDC);
 
-//#if( DEBUG1)
+#if( DEBUG1)
 	GlLib::SetDCPixelFormat( m_pDC->m_hDC);						// OpenGL用にPixel Formatを指定
 	m_GLRC = wglCreateContext( m_pDC->m_hDC);					// Rendering contextの生成
 	wglMakeCurrent( m_pDC->m_hDC, m_GLRC);						// 現在のcontext設定
 
 	GlLib::InitializeOpenGL();									//3Dシーンを初期化する関数を用意する
 	GlLib::MakeGLObject();										//3Dオブジェクトを生成する
-//#endif
+#endif
 
 	return 0;
 }
@@ -190,9 +190,9 @@ void CChildView2::OnSize( UINT nType, int cx, int cy)
 	CWnd::OnSize( nType, cx, cy);
 
 																				//	MsOnSize( nType, cx, cy);//
-//#if( DEBUG1)
+#if( DEBUG1)
 	GlLib::ViewSetting(cx, cy);
-//#endif
+#endif
 
 	m_M3View.OnSize( nType, cx, cy);
 

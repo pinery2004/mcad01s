@@ -406,7 +406,7 @@ void MdlDispList::MhGetBCtr(
 ////////////////////////////////////////////////////////////////////////////
 //	構造家モデルの３次元ディスプレイリストを作成する	部材、基礎	実体
 //	
-int MdlDispList::DrawIeMdl(
+int MdlDispList::DrawIeMdlK(
 						MREAL		rB,				// 表示倍率
 				const	MgPoint3	&PtCtr			// 中心座標
 				)
@@ -510,15 +510,15 @@ MINT MdlDispList::DrawIeMdl1(
 				const	MgPoint3	&PtCtr			// 中心座標
 				)
 {
-	// MhPlcInfo*	pPlcEn;
-	// MPOSITION	posH;
+	 MhPlcInfo*	pPlcEn;
+	 MPOSITION	posH;
 
 	if (  MdlDispList::OpenDL( 1))
 		return 1;
-
+#if	(Disp3DBox)
 	MsDrawBox( 2.0, 3.0, 1.0);			//ADD
 	MsDrawPlane( 5.0, 5.0 , 0.0);		//ADD
-/*
+#else
 	for ( pPlcEn = HaitiDb::MdGetHeadPts( &posH); pPlcEn!=0;
 		  pPlcEn = HaitiDb::MdGetNextPts( &posH)) {
 
@@ -558,7 +558,7 @@ MINT MdlDispList::DrawIeMdl1(
 	}
 	// 図形情報のディスプレイリストを作成する
 	DispList::DrawAllEnt( PtCtr, rB);
-*/
+#endif
 	MdlDispList::CloseDL();
 	return 0;
 }

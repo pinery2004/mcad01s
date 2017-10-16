@@ -63,7 +63,7 @@ void WindowCtrl::MmDrawStructure(
 
 	// ÇcÇbÇ…ï\é¶
 	WindowCtrl::MmWndKDrawGrid( pWndInfo, pCod);
-	MINT iKaiC = InpMode::GetKai();									// åªç›ÇÃäK
+	MINT iKaiC = InpMode::GetKai();							// åªç›ÇÃäK
 	MINT iGpC = InpMode::GetKGp();							// åªç›ÇÃç\ê¨
 	WindowCtrl::MmWndKDrawKabe( pCod, iKaiC, iGpC);
 	WindowCtrl::MmWndKDrawKiso( pCod, iKaiC, iGpC);

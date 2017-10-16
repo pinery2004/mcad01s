@@ -63,7 +63,7 @@ public:
 	////////////////////////////////////////////////////////////////////////////
 	//	構造家モデルの３次元ディスプレイリストを作成する	部材、基礎	実体
 	//	
-	static int DrawIeMdl(
+	static int DrawIeMdlK(
 							MREAL		rB,				// 表示倍率
 					const	MgPoint3	&PtCtr			// 中心座標
 					);

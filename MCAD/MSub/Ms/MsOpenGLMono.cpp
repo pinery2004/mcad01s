@@ -401,21 +401,11 @@ void MsDrawDisplayList(
 		break;
 		
 #else
-		MsViewSWMode( 11);				
-		
-// 面表示
+		MsViewSWMode( 11);										// 面表示
  
 		glCallList( z_DispListFig[1]);							// マテリアル付き　部材+基礎
-#if(1)
-	MsDrawBox( 2.0, 3.0, 1.0);			//ADD  z_DispListFig[1]で表示されなければならないがここを消すと絵が出ない　111031
-	MsDrawPlane( 5.0, 5.0 , 0.0);		//ADD
-#endif
-		MsViewSWMode( 12);										// 面表示
 
-//	MsDrawBox( 1.0, 2.0, 0.5);			//ADD
-//	MsDrawPlane( 5.0, 5.0 , 1.0);		//ADD
-//	glEnable(GL_DEPTH_TEST);									// 前後テスト
-//	glBlendFunc(GL_ONE, GL_ZERO);								// 実態表示設定(前1.0,後0.0: 後の図形を非表示)　
+		MsViewSWMode( 12);										// 面表示
 
 		glCallList( z_DispListFig[1]);							// マテリアル付き　部材+基礎
 

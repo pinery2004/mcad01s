@@ -29,7 +29,7 @@ int GlLib::MakeGLObject()
 
 	return (0) ;
 }
-
+#if(0)
 void GlLib::DrawGLobject()
 {
 	//シーンをクリアする。色情報、デプスバッファをクリア
@@ -74,6 +74,8 @@ void GlLib::DrawGLobject()
 	glDisable(GL_NORMALIZE) ;
 	return;
 }
+#endif
+
 #if(1)
 void GlLib::DrawGLobject1(
 						int			i_iFWire,	// 表示タイプ　0: 面表示、1:半透明、2:部材のみ、3:ワイヤフレーム表示
@@ -149,7 +151,7 @@ int GlLib::SetDCPixelFormat( HDC hdc)
     static PIXELFORMATDESCRIPTOR pfd = {
         sizeof (PIXELFORMATDESCRIPTOR), 		// Specifies the size of this data structure
         1,                                          			// Specifies the version of this data structure
-        PFD_DRAW_TO_WINDOW |                        // ピクセルバッファのビットフラグの設定
+        PFD_DRAW_TO_WINDOW |					// ピクセルバッファのビットフラグの設定
         PFD_SUPPORT_OPENGL |
         PFD_DOUBLEBUFFER,
         PFD_TYPE_RGBA,                        // RGBA pixel values
