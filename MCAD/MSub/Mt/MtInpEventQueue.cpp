@@ -109,6 +109,9 @@ MtInpEvent * MtInpEventQueue::WaitEvent( MtInpEventFilter *pFilter)
 		::InterlockedIncrement( &m_nWaitCount);
 
 		while ( ( m_ourState == EQS_NORMAL) && ( pRetval == NULL))	{
+// NU			// アイドル時のCPU使用率3～4%を0%にする
+// NU			Sleep(2000);
+
 //S			processMessagesWhileWaiting();						// 入力イベント待ち
 			ProcessMsgWaitForObject( m_hSynchroEvent);			// 入力イベント待ち
 

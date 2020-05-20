@@ -98,9 +98,9 @@ MINT IeModel::MhMdlLoad(										//
 //===
 		static int iCrf = 0;
 		TRACE( "Roof iCrf = %d\n", ++iCrf);
-		if( iCrf == 315) {
-			__debugbreak();										// ブレークポイント
-		}
+		//if( iCrf == 315) {
+		//	__debugbreak();										// ブレークポイント
+		//}
 //---
 
 		if ( iSize <= 0)

@@ -96,16 +96,16 @@ MINT MhRoofInfo::Load(								//
 		static	int iCyane = 0;
 		TRACE( "%d; iType=%d\n", ++iCyane, iType);
 
-    HANDLE hHeaps[10000];
-	
-    DWORD numHeaps = GetProcessHeaps( 10000, hHeaps);
-	__debugbreak();												// ブレークポイント
-//S	for( unsigned int i=0; i < numHeaps; i++) {
-//	    if ( !ValidateHeap(hHeaps[i])) {
-//			__debugbreak();
-//		}
-//	}
-//---
+//    HANDLE hHeaps[10000];
+//	
+//    DWORD numHeaps = GetProcessHeaps( 10000, hHeaps);
+//	__debugbreak();												// ブレークポイント
+////S	for( unsigned int i=0; i < numHeaps; i++) {
+////	    if ( !ValidateHeap(hHeaps[i])) {
+////			__debugbreak();
+////		}
+////	}
+////---
 
 		if ( iSize <= 0)
 			break;
